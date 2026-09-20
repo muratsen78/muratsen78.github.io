@@ -1,0 +1,241 @@
+/* ---- Genel ayarlar ---- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* Sayfa içeriğini ortalayan kapsayıcı */
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: #1a5f9e;
+}
+
+/* ---- Üst menü ---- */
+.topbar {
+  background: #1f3a5f;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topbar .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.topbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 16px;
+}
+
+.topbar nav a {
+  color: #dbe6f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topbar nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ---- Giriş bölümü ---- */
+.hero {
+  background: #1f3a5f;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 6px;
+}
+
+.unvan {
+  font-size: 18px;
+  color: #a9c4e0;
+  margin-bottom: 18px;
+}
+
+.ozet-kisa {
+  max-width: 600px;
+  margin: 0 auto 24px;
+  color: #e3ecf5;
+}
+
+.butonlar {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  color: #1f3a5f;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #dbe6f2;
+}
+
+.btn-acik {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-acik:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ---- Bölümler ---- */
+.bolum {
+  padding: 50px 0;
+}
+
+.bolum-gri {
+  background: #f4f6f9;
+}
+
+.bolum h2 {
+  font-size: 26px;
+  color: #1f3a5f;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #1f3a5f;
+}
+
+.bolum p {
+  margin-bottom: 12px;
+}
+
+/* ---- İçerik kutuları ---- */
+.kutu {
+  background: #fff;
+  border: 1px solid #dde3ea;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.kutu-bas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.kutu h3 {
+  font-size: 18px;
+  color: #1f3a5f;
+}
+
+.tarih {
+  font-size: 14px;
+  color: #666;
+}
+
+.firma {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.kutu ul {
+  padding-left: 20px;
+}
+
+.kutu li {
+  margin-bottom: 6px;
+}
+
+/* ---- İki sütunlu ızgara ---- */
+.izgara {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.izgara .kutu {
+  margin-bottom: 0;
+}
+
+/* ---- Etiketler ---- */
+.etiketler span {
+  display: inline-block;
+  background: #e8eef5;
+  color: #1f3a5f;
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin: 4px 4px 0 0;
+}
+
+/* ---- İletişim ---- */
+.iletisim-liste {
+  list-style: none;
+}
+
+.iletisim-liste li {
+  margin-bottom: 8px;
+}
+
+/* ---- Alt bilgi ---- */
+footer {
+  background: #1f3a5f;
+  color: #dbe6f2;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* ---- Telefon ekranları ---- */
+@media (max-width: 820px) {
+  .topbar .wrap {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
